@@ -3,7 +3,7 @@ const fetch = require("node-fetch"); // How we are actually proxying the assets
 const kuler = require("kuler"); // Console colors
 const app = express();
 
-const proxyUrl = "3kh0.github.io";
+const proxyUrl = "rahib777-7.github.io/3kh0/";
 console.log(kuler("Proxying the domain: " + proxyUrl, "#00ffdd"));
 app.get("/*", async (req, res) => {
   const proxied = await fetch("https://" + proxyUrl + req.url); // Get the asset from the website
